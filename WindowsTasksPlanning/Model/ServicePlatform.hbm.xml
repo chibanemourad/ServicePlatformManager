@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2"
+				   assembly="WindowsTasksPlanning"
+				   namespace="WindowsTasksPlanning.Model">
+  <class name="ServicePlatform" table="ServicePlatform">
+    <id name="Id">
+      <generator class="identity"/>
+    </id>
+    <version name="Version"/>
+    <property name="Name"/>
+    <property name="Country" />
+    <property name="ShortDescription" />
+    <property name="CreationDate" />
+    <property name="ModificationDate" />
+    <property name="Product" />
+    <property name="TZ" />
+    <property name="IPAddress" />
+    <property name="DBName" />
+    <property name="IPAddressType" />
+    <property name="Login" />
+    <property name="Password" />
+    <property name="Contact" />
+    <property name="Retry_delay" />
+    <property name="LaunchAcquisitionHour" />
+    <property name="LaunchAcquisitionMinute" />
+    <property name="LastAcquisitionDate" />
+    <property name="LastAcquisitionStatus" />
+  </class>
+</hibernate-mapping>
